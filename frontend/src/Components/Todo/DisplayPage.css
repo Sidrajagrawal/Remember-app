@@ -1,0 +1,20 @@
+.Page-Conatiner{
+    position: absolute;
+    top:0;
+    width: 97vw;
+    height: 86vh;
+    background: rgba(99, 98, 98, 0.3);
+    backdrop-filter: blur(3px);
+    border-radius: 24px ;
+    display: flex;
+}
+.pagebody{
+    height: 100%;
+    width: 50vw;
+    background-color: #f8f9fa;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 9px;
+}

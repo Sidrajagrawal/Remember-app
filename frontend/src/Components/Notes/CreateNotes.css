@@ -1,0 +1,28 @@
+.CreateNotes-Container{
+    height: 30.8em;
+    margin: 10px;
+    padding: 20px;
+    padding-left: 40px;
+}
+.solog{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #727478;
+}
+.titleInput{
+    padding-bottom: 20px;
+}
+.titleInput input{
+    width: 400px;
+    height: 40px;
+    font-size: 24px;
+    font-weight:550;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    letter-spacing: 1px;
+    position: relative;
+}
+.Savebutton button{
+    margin: 15px;
+    cursor: pointer;
+}

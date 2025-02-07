@@ -1,0 +1,92 @@
+@keyframes rotatePlus {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:  rotate(360deg);
+    }
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.btn-Container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.btn .Main-btn {
+    background-color: #ffb703;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: black;
+    border: none;
+    font-size: 60px;
+    box-shadow: 1px 2px 5px black;
+    position: relative;
+    z-index: 1;
+}
+
+.Main-btn span {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Main-btn:hover {
+    background-color: #ffd60a;
+}
+
+.Main-btn:hover {
+    animation: rotatePlus 0.4s linear;
+}
+
+.Create-Menu {
+    position: absolute;
+    top: 55%;
+    left: calc(100% - 230px);
+    width: 80px;
+    height: 270px;
+    border-radius: 50px;
+    background-color: #F1F3F4;
+    z-index: 0;
+    box-shadow: 1px 1px 5px black;
+
+    animation: slideUp 0.4s ease-out;
+    transform-origin: bottom center;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+.Create-Menu-btn{
+    background-color: #ffb703;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px black;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 27px;
+
+}
+.Create-Menu.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Create-Menu:not(.visible) {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.Create-Menu-btn:hover{
+    background-color: #ffd60a;
+}

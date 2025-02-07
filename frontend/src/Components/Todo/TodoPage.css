@@ -1,0 +1,47 @@
+.Main-Container {
+    position: relative;
+}
+
+.Todo-Conatiner {
+    height: 32.4em;
+    background-color: #fec89a;
+    box-shadow: 2px 2px 5px black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Todo-Conatiner::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Todo-Conatiner::-webkit-scrollbar-track {
+    background: #fec89a;
+    border-radius: 20px;
+}
+
+.Todo-Conatiner::-webkit-scrollbar-thumb {
+    background: #ffb5a7;
+}
+
+.CARD {
+    background-color: #fcab41;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: #ffd60a;
+}
+
+.Page-Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid red;
+    display: flex;
+    background-color: white; /* Optional: to distinguish the page */
+    z-index: 10; /* Ensure it overlays the content */
+}
